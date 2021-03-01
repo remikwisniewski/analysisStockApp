@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Stop Loss Calculator</title>
+    </header>
+    <body>
+        <form method = "POST">
+            <p>
+                Actual Price
+                <input name = "actual_price_input">
+                <br>
+                <br>
+                Low Price
+                <input name = "low_price_input">
+                <br>
+                <br>
+                Average True Range
+                <input name = "average_true_range_input">
+                <br>
+                <br>
+                Max Stop Loss
+                <input name = "max_stop_loss_input">
+                <br>
+                <br>
+                <input type = "submit" value = "Generate">
+            </p>
+        </form>
+        <p>Stop Loss 1 ATR: {{sl1atr}}</p>
+        <p>Stop Loss 2 ATR: {{sl2atr}}</p>
+        <p>Stop Loss 3 ATR: {{sl3atr}}</p>
+        <br>
+        <p>Number of Shares 1 ATR: {{ns1atr}}</p>
+        <p>Number of Shares 2 ATR: {{ns2atr}}</p>
+        <p>Number of Shares 3 ATR: {{ns3atr}}</p>
+        <br>
+        <p>Forex Lots 1 ATR: {{fl1atr}}</p>
+        <p>Forex Lots 2 ATR: {{fl2atr}}</p>
+        <p>Forex Lots 3 ATR: {{fl3atr}}</p>
+    </body>
+</html>
